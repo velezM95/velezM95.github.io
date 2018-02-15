@@ -1,0 +1,157 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+   box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+   font-family: Helvetica, sans-serif;
+   padding: ;
+   width: 100%;
+   border: 1px #ffffff;
+   font-size: 16px;
+   /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+   /* the comma means apply the following CSS declarations to all of the listed elements */
+   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+   
+   max-width: ;
+}
+
+header {
+   font-size: 3.2vw;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #563ee3;
+	border-bottom: 2px solid #000000;
+	min-height:	4em;
+   
+}
+
+header h1 {
+   margin: 0;
+	padding-bottom: .3em;
+	color: #ffffff;
+	font-size: 1.5em;
+	text-decoration: underline;
+	text-align: center;
+}
+
+header img {
+   border-bottom: 2px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 6em;
+	height: 4em;
+	border-right: 2px;
+}
+
+header .subheading {
+   text-align: center;
+	margin-left: 7em;
+	font-size: .75em;
+	color: #ffffff;
+	padding: 0;
+	height: 2em;
+}
+
+nav {
+   width: 100%;
+	margin: auto;
+	border-bottom: 2px;
+}
+
+nav button {}
+
+nav ul {
+   text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+   background-color: #01ae01;
+	font-size: 1em;
+	display: block;
+	margin: 10px;
+}
+
+nav ul li a {
+   display: block;
+	padding: 6px;
+	text-decoration: none;
+}
+
+nav ul li.active a {
+   color: #ffff00;
+}
+
+nav ul li a:hover {
+   color: #000000;
+}
+
+main {
+   width: 100%;
+}
+
+main h2 {
+   margin:0;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+main figure {
+   margin: 0 0 .2rem 2%;
+   padding: 0;
+   width: 96%;
+}
+
+main figure img {
+   height: 100%;
+   width: 100%;
+}
+
+section {
+   
+}
+
+article p.town-article img {
+   /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+   float: left;
+   width: 100%;
+   /* fill the page in the small/phone view */
+   margin:;
+}
+
+footer {
+   display:block;
+	font-size: smaller;
+	background-color: #01ae01;
+	color: #9BBFB5;
+}
+
+footer aside {
+   padding: 5px;
+	width: 75%;;
+	margin: auto;
+}
+
+footer > p {
+   text-align: center;
+	width: 75%;
+	margin: auto;
+}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
