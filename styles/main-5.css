@@ -1,17 +1,12 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
 
 * {
    box-sizing: border-box;
 }
-
-/* This wildcard applies to all elements ensuring a box layout model */
-
 body {
-   font-family: Helvetica, sans-serif;
-   padding: ;
+   font-family: Arial, Helvetica, sans-serif;
    width: 100%;
-   border: 4px;
-   font-size: 16px;
+   border: 1px;
+   font-size: 18px;
    /* Declare the base font-family - from google font api or other */
 }
 
@@ -22,45 +17,43 @@ footer {
    /* the comma means apply the following CSS declarations to all of the listed elements */
    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
    
-   max-width: ;
+   max-width: 100%;
 }
 
 header {
-   font-size: 3.2vw;
-	margin: 0;
-	padding: 0;
+   font-size: 20px;
+	margin: 4px;
+	padding: 8px;
 	width: 100%;
 	background-color: #ffffff;
 	border-bottom: 2px;
-	min-height:	4em;
    
 }
 
 header h1 {
-   margin: 0;
-	padding-bottom: .3em;
+    margin: 0;
+	padding: 4px;
 	color: #595758;
-	font-size: 1.5em;
+	font-size: 30px;
 	text-align: center;
 }
 
 header img {
-   border-bottom: 2px;
+   
 	float: left;
 	margin: 0;
 	padding: 0;
-	width: 6em;
-	height: 4em;
-	border-right: 4px;
+	width: 120px;
+	height: 80px;
+ 
 }
 
 header .subheading {
    text-align: center;
-	margin-left: 7em;
-	font-size: .75em;
+	font-size: 17px;
 	color: #9BBFB5;
 	padding: 0;
-	height: 2em;
+	height: 30px;
 }
 
 nav {
@@ -69,7 +62,9 @@ nav {
 	border-bottom: 2px;
 }
 
-nav button {}
+/*nav button {
+  
+} */
 
 nav ul {
    text-align: center;
@@ -79,16 +74,18 @@ nav ul {
 }
 
 nav ul li {
-   background-color: #B8D9D0;
-	font-size: 1em;
-	display: block;
-	margin: 10px;
+  margin: 10px;
+  display: block;
+  background-color: #B8D9D0;
+  font-size: 17px;
+	
 }
 
 nav ul li a {
-   display: block;
-	padding: 6px;
-	text-decoration: none;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
 }
 
 nav ul li.active a {
@@ -104,8 +101,6 @@ main {
 }
 
 main h2 {
-   margin:0;
-	font-size: 1.5em;
 	text-align: center;
 }
 
@@ -120,37 +115,81 @@ main figure img {
    width: 100%;
 }
 
+.current {
+	padding: 2px;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+
+.current picture img{
+	width: 100px;
+	height: 90px;
+	vertical-align: middle;
+}
+
+#high, #low{
+	display: inline;
+}
+
+
 section {
-   
+  text-align: center;
+	padding: 2px;   
+}
+
+.right{
+	display: none;
+}
+
+article {
+	width: 100%;
+	font-family: Arial, "Helvetica Neue",sans-serif;
+	border: 2px solid #8C8C8C;
+  margin: 12px;
+}
+
+
+article h3{
+	text-align: center;
+}
+
+article p{
+	padding: 8px;
+  margin:  5px;	
+	text-indent: 3px;
 }
 
 article p.town-article img {
    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  /* fill the page in the small/phone view */
    float: left;
-   width: 100%;
-   /* fill the page in the small/phone view */
-   margin:;
+  margin-bottom: 20px;
+   height: 300px;
+}
+
+section.forecast {
+	display: none;
 }
 
 footer {
    display:block;
 	font-size: smaller;
-	background-color: #01ae01;
-	color: #9BBFB5;
+	background-color: #9BBFB5;
 }
 
 footer aside {
-   padding: 5px;
-	width: 75%;;
+   padding: 10;
+	width: 100%;
 	margin: auto;
+  text-align: center;
+  color: white;
 }
 
 footer > p {
    text-align: center;
-	width: 75%;
+	width: 100%;
 	margin: auto;
+   background-color:#595758 ;
+  color: white;
 }
-
-/* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */
