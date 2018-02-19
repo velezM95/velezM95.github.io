@@ -1,0 +1,199 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Fjalla One', sans-serif;
+   width: 100%;
+   border: 1px;
+   font-size: 18px;
+   /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+   /* the comma means apply the following CSS declarations to all of the listed elements */
+   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+   max-width: 100%;
+}
+
+header {
+   font-size: 20px;
+   margin: 4px;
+   padding: 8px;
+   width: 100%;
+   background-color: #ffffff;
+   border-bottom: 2px;
+
+}
+
+header h1 {
+   margin: 0;
+   padding: 4px;
+   color: #595758;
+   font-size: 30px;
+   text-align: center;
+}
+
+header img {
+
+   float: left;
+   margin: 0;
+   padding: 0;
+   width: 120px;
+   height: 80px;
+
+}
+
+header .subheading {
+   text-align: center;
+   font-size: 17px;
+   color: #9BBFB5;
+   padding: 0;
+   height: 30px;
+}
+
+nav {
+   width: 100%;
+   margin: auto;
+   border-bottom: 2px;
+}
+
+.hamburger {
+   display: block;
+   position: absolute;
+   top: 6em;
+   right: 1.25em;
+}
+
+.navigation li {
+   display: none;
+}
+nav ul {
+   text-align: center;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav ul li {
+   margin: 10px;
+   display: block;
+   font-size: 18px;
+}
+
+nav ul li a {
+   display: block;
+   padding-left: 0;
+   text-decoration: none;
+   color: black;
+}
+
+nav ul li.active a {
+   color: #8C8C8C;
+}
+
+nav ul li a:hover {
+   color: #F2F2F2;
+}
+
+main {
+   width: 100%;
+}
+
+main h2 {
+   text-align: center;
+}
+
+main figure {
+   margin: 0 0 .2rem 2%;
+   padding: 0;
+   width: 96%;
+}
+
+main figure img {
+   height: 100%;
+   width: 100%;
+}
+
+.current {
+   padding: 2px;
+   font-size: 2em;
+   font-weight: bold;
+}
+
+
+.current picture img {
+   width: 100px;
+   height: 90px;
+   vertical-align: middle;
+}
+
+#high,
+#low {
+   display: inline;
+}
+
+
+section {
+   text-align: center;
+   padding: 2px;
+}
+
+.right {
+   display: none;
+}
+
+article {
+   width: 100%;
+   font-family: Arial, "Helvetica Neue", sans-serif;
+   border: 2px solid #8C8C8C;
+   margin: 12px;
+}
+
+
+article h3 {
+   text-align: center;
+}
+
+article p {
+   padding: 8px;
+   margin: 5px;
+   text-indent: 3px;
+}
+
+article p.town-article img {
+   /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+   /* fill the page in the small/phone view */
+   float: left;
+   margin-bottom: 20px;
+   height: 300px;
+}
+
+section.forecast {
+   display: none;
+}
+
+footer {
+   display: block;
+   font-size: smaller;
+   background-color: #9BBFB5;
+}
+
+footer aside {
+   padding: 10;
+   width: 100%;
+   margin: auto;
+   text-align: center;
+   color: white;
+}
+
+footer > p {
+   text-align: center;
+   width: 100%;
+   margin: auto;
+   background-color: #595758;
+   color: white;
+}
