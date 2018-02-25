@@ -62,10 +62,6 @@ nav {
 	border-bottom: 2px;
 }
 
-/*nav button {
-  
-} */
-
 nav ul {
    text-align: center;
 	list-style-type: none;
@@ -193,3 +189,4 @@ footer > p {
    background-color:#595758 ;
   color: white;
 }
+

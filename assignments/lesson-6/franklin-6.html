@@ -12,11 +12,11 @@
    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
    <link href="styles/normalize.css" rel="stylesheet">
    <!-- normalize useragent/browser defaults -->
-   <link href="styles/main-5.css" rel="stylesheet">
+   <link href="styles/main-6.css" rel="stylesheet">
    <!-- default styles - small/phone views -->
-   <link href="styles/medium-5.css" rel="stylesheet">
+   <link href="styles/medium-6.css" rel="stylesheet">
    <!-- medium/tablet views -->
-   <link href="styles/large-5.css" rel="stylesheet">
+   <link href="styles/large-6.css" rel="stylesheet">
    <!-- large/wide/desktop views -->
 </head>
 
@@ -32,7 +32,7 @@
    <!-- site navigation use placeholder references -->
    <nav>
       <button class="hamburger" onclick="toggleHam()">&#9776;</button>
-      <ul id="primary-nav" class="hide">
+      <ul class="navigation">
          <li><a href="Home/"> Home </a></li>
          <li class="active"><a href="Franklin/"> Franklin </a></li>
          <li><a href="Greenville/"> Greenville </a></li>
@@ -42,16 +42,19 @@
       </ul>
    </nav>
    <main>
-      <figure>
-         <img src="images/todaysForecast.jpg" alt="" width="800" height="200">
-      </figure>
+      <picture>
+         <source srcset="images/franklinlarge.jpg" media="(min-width: 64em)">
+         <source srcset="images/franklinmedium.jpg" media="(min-width: 37.5em)">
+         <img src="images/franklinsmall.jpg" alt="picture of franklin" style="width: 98%;">
+      </picture>
+
       <section>
          <h2>Franklin</h2>
          <!-- <h3>Weather Summary</h3> -->
          <div class="current">
             Sunny
             <picture>
-               <img src="images/weatherlogo.jpg" alt="theWeather">
+               <img src="images/todaysForecast.jpg" alt="">
             </picture>
             <span class="right">Sunny</span>
          </div>
@@ -102,9 +105,14 @@
 
       <article>
          <h3>Franklin Breaks Record</h3>
-         <p class="town-article">
-            <img src="images/articlephoto.jpg" alt="recordpic" width="410" height="900"> The summer of 2017 goes down as Franklin’s second-hottest ever with its seemingly ceaseless parade of 90-plus degree days. Saturday is expected to be the first day this summer that the low temperature drops below 70 degrees. If so, it has been 73 days — a record — since the city felt so cool. The once-typical late-in-the-day cooling-off periods have disappeared, and if future summers mimic this year’s, then we can expect worsening weather.
-         </p>
+         <div class="flex-article">
+            <div>
+               <img class="town-article" src="images/articlephoto.jpg" alt="recordpic">
+            </div>
+            <div>
+               <p>The summer of 2017 goes down as Franklin’s second-hottest ever with its seemingly ceaseless parade of 90-plus degree days. Saturday is expected to be the first day this summer that the low temperature drops below 70 degrees. If so, it has been 73 days — a record — since the city felt so cool. The once-typical late-in-the-day cooling-off periods have disappeared, and if future summers mimic this year’s, then we can expect worsening weather. </p>
+            </div>
+         </div>
       </article>
 
    </main>
@@ -117,7 +125,7 @@
       </aside>
       <p class="footer-bar">&copy;2018 | Whats The Forecast? | <span id="current_date"> </span></p>
    </footer>
-   
+
    <script src="scripts/currentdate.js"></script>
 
 </body>
